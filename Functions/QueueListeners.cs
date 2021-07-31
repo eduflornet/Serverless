@@ -8,8 +8,10 @@ namespace Functions
     public static class QueueListeners
     {
         [FunctionName("QueueListeners")]
-        public static async Task Run([QueueTrigger("todos", Connection = "AzureWebJobsStorage")] Todo todo,
-            [Blob("todos", Connection = "AzureWebJobsStorage")] CloudBlobContainer container,
+        public static async Task Run([QueueTrigger("todos", Connection = "AzureWebJobsStorage")]
+            Todo todo,
+            [Blob("todos", Connection = "AzureWebJobsStorage")]
+            CloudBlobContainer container,
             ILogger log)
         {
             await container.CreateIfNotExistsAsync();

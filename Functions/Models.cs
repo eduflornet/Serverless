@@ -33,7 +33,7 @@ namespace Functions
     {
         public static TodoTableEntity ToTableEntity(this Todo todo)
         {
-            return new TodoTableEntity()
+            return new TodoTableEntity
             {
                 PartitionKey = "TODO",
                 RowKey = todo.Id,
@@ -45,7 +45,7 @@ namespace Functions
 
         public static Todo ToTodo(this TodoTableEntity todo)
         {
-            return new Todo()
+            return new Todo
             {
                 Id = todo.RowKey,
                 CreatedTime = todo.CreatedTime,
@@ -53,6 +53,5 @@ namespace Functions
                 TaskDescription = todo.TaskDescription
             };
         }
-
     }
 }

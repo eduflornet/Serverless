@@ -30,4 +30,5 @@ I have using the following tools:
 ## References:
 - [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/)
 - [Book: Serverless apps: Architecture, patterns, and Azure implementation](https://docs.microsoft.com/en-us/dotnet/architecture/serverless/)
-- [Azure Table storage](https://docs.microsoft.com/en-us/azure/storage/tables/) 
+- [Azure Table storage](https://docs.microsoft.com/en-us/azure/storage/tables/)
+- [CRON Expressions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer?tabs=csharp#ncrontab-expressions)

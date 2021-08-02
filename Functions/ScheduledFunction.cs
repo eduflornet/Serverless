@@ -10,7 +10,7 @@ namespace Functions
     {
         [FunctionName("ScheduledFunction")]
         // CRON every minute expression with TimeSpan "00:01:00" for the purpose of this test
-        public static async Task Run([TimerTrigger("00:01:00")] TimerInfo myTimer,
+        public static async Task Run([TimerTrigger("0 * 5 * * *")] TimerInfo myTimer,
             [Table("todos", Connection = "AzureWebJobsStorage")]
             CloudTable todoTable,
             ILogger log)

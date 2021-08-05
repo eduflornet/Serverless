@@ -24,4 +24,21 @@ namespace Functions.App
         public string Email { get; set; }
         public string ResponseUrl { get; set; }
     }
+
+    public class EventTableEntity
+    {
+        public string PartitionKey { get; set; }
+        public string RowKey { get; set; }
+        public DateTime EventDateAndTime { get; set; }
+        public string Location { get; set; }
+        public string ResponsesJson { get; set; }
+    }
+
+    public class Response
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string IsPlaying { get; set; }
+        public string ResponseCode { get; set; }
+    }
 }
